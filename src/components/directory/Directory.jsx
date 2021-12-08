@@ -13,14 +13,14 @@ class Directory extends Component {
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                     id: 1,
                     size:'small',
-                    linkUrl: 'shop/hats'
+                    linkUrl: 'hats'
                   },
                   {
                     title: 'jackets',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 2,
                     size:'small',
-                    linkUrl: 'shop/jackets'
+                    linkUrl: 'jackets'
                   },
                   {
                     title: 'sneakers',
@@ -53,7 +53,7 @@ class Directory extends Component {
             <div className="directory-menu">
                 {
                     this.state.sections.map(section=>(
-                        <MenuItem key={section.id} title={section.title} u={section.imageUrl} size={section.size}/>
+                        <MenuItem key={section.id} title={section.title} u={section.imageUrl} size={section.size} linkUrl={section.linkUrl}/>
                     ))
                 }
             </div>
