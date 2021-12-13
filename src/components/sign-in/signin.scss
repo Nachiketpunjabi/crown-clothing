@@ -1,0 +1,14 @@
+.sign-in{
+    width: 380px;
+    display:flex;
+    flex-direction: column;
+    
+    
+    .title{margin:10px}
+
+    .buttons{
+        display:flex;
+        width:10px;
+        justify-content: space-between;
+    }
+}
