@@ -11,12 +11,12 @@ export class signin extends Component {
         this.state = {
             email:'',
             password:''
-        }
+        } 
     }
     
     handlesubmit = (e) => {
         e.preventDefault()
-
+        console.log(e.target)
         this.setState({email:'',password:''})
     }
     handleChange = e =>{
