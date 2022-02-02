@@ -32,7 +32,7 @@ const Header = ({currentUser,hidden}) => {
                 <CartDropdown/>
             }
         </div>
-    )
+    ) 
 } 
 
 // Gets access to user data from redux store and assigns to currentUser
