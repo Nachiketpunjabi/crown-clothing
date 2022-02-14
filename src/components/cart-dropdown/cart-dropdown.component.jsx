@@ -5,7 +5,7 @@ import CartItem from '../cart-item/cartItem.component';
 import CustomButton from '../custom-button/CustomButton'
 import './cart-dropdown.styles.scss';
 import { selectCartItems } from '../../redux/cart/cart.selector';
-const CartDropdown = ({cartItems, history}) => {
+const CartDropdown = ({cartItems, history,dispatch}) => {
   return <div className='cart-dropdown'>
     <div className='cart-items'>
       {
@@ -19,7 +19,7 @@ const CartDropdown = ({cartItems, history}) => {
       }
     </div>
 
-    <CustomButton onClick={()=>console.log(history.push('/checkout'))}>GO TO CHECKOUT</CustomButton>
+    <CustomButton onClick={()=>history.push('/checkout') }>GO TO CHECKOUT</CustomButton>
       
   </div>
 }
